@@ -4,9 +4,9 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python3 -m app.main",
-    "healthcheckPath": "/docs",
-    "healthcheckTimeout": 100,
+    "startCommand": "./start.sh",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 300,
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }

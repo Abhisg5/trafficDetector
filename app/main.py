@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 from contextlib import asynccontextmanager
+import os
 
 from app.core.config import settings
 from app.api.routes import traffic, analysis, investment, dashboard, real_estate
@@ -122,9 +123,10 @@ async def atlanta_info():
 
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
     uvicorn.run(
         "app.main:app",
         host="0.0.0.0",
-        port=8000,
-        reload=True
+        port=port,
+        reload=False
     ) 
