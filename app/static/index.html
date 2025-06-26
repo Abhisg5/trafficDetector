@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrafficDetector - Atlanta Real Estate Investment Analysis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+        .endpoints {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .endpoints h3 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        .endpoint {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .status {
+            text-align: center;
+            padding: 20px;
+            background: rgba(76, 175, 80, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .status h2 {
+            color: #4caf50;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚦 TrafficDetector</h1>
+        <h2 style="text-align: center; margin-bottom: 30px;">Atlanta Real Estate Investment Analysis</h2>
+        
+        <div class="status">
+            <h2>✅ System Status: Online</h2>
+            <p>API is running and ready to analyze Atlanta traffic and real estate data</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🚗 Traffic Analysis</h3>
+                <p>Real-time traffic data collection and analysis for Atlanta metro area. Monitor congestion patterns and identify traffic hotspots.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🏠 Real Estate Integration</h3>
+                <p>Property listings and market data analysis. Find investment opportunities based on traffic patterns and market trends.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Investment Scoring</h3>
+                <p>Multi-factor investment analysis with ROI calculations and risk assessment for Atlanta properties.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📈 Historical Data</h3>
+                <p>Up to 1 year of historical traffic and market data for trend analysis and pattern recognition.</p>
+            </div>
+        </div>
+
+        <div class="endpoints">
+            <h3>🔗 Available API Endpoints</h3>
+            <div class="endpoint">GET /api/v1/traffic/current - Get current traffic data</div>
+            <div class="endpoint">GET /api/v1/traffic/hotspots - Get traffic hotspots</div>
+            <div class="endpoint">GET /api/v1/real-estate/properties - Get property listings</div>
+            <div class="endpoint">GET /api/v1/investment/opportunities - Get investment opportunities</div>
+            <div class="endpoint">GET /api/v1/analysis/trends - Get traffic trends</div>
+            <div class="endpoint">GET /health - Health check</div>
+            <div class="endpoint">GET /docs - Interactive API documentation</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <p><strong>Coverage:</strong> Atlanta, Sandy Springs, Alpharetta, Marietta, Decatur, Johns Creek, Duluth, Smyrna, and more...</p>
+            <p><strong>Data Sources:</strong> TomTom Traffic API, Simulated Real Estate Data, Market Analysis</p>
+        </div>
+    </div>
+</body>
+</html> 

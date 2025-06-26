@@ -1,0 +1,64 @@
+# Core FastAPI dependencies - updated for Python 3.13 compatibility
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.20
+
+# Database - using newer version compatible with Python 3.13
+sqlalchemy>=2.0.41
+alembic>=1.13.0
+
+# HTTP client for API calls
+aiohttp>=3.12.0
+httpx>=0.28.0
+requests>=2.32.0
+
+# Data processing and analysis
+pandas
+numpy
+scikit-learn
+
+# Visualization
+matplotlib
+plotly
+seaborn
+
+# Environment and configuration
+python-dotenv>=1.0.1
+# Using latest pydantic version for Python 3.13 compatibility
+pydantic>=2.9.0
+
+# Scheduling and background tasks
+schedule>=1.2.0
+
+# Geospatial and mapping
+geopy>=2.4.1
+folium>=0.15.1
+
+# Real estate and market data APIs (using reliable alternatives)
+census>=0.8.19
+
+# Machine learning and prediction (using scikit-learn only)
+# Note: XGBoost removed for compatibility
+
+# Data export and file handling
+openpyxl>=3.1.2
+xlsxwriter>=3.1.9
+
+# Logging and monitoring
+structlog>=23.2.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# Development tools
+black>=24.0.0
+flake8>=7.0.0
+
+# Additional utilities
+python-dateutil>=2.9.0
+pytz>=2024.1
+tqdm>=4.67.0
+
+# Traffic data APIs - using direct HTTP requests instead of specific packages
+# Note: TomTom API will be accessed via direct HTTP requests in the code 

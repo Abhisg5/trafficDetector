@@ -1,0 +1,158 @@
+# TrafficDetector Environment Configuration
+# Copy this file to .env and fill in your API keys
+
+# =============================================================================
+# TRAFFIC DATA APIs
+# =============================================================================
+
+# TomTom Traffic API - Real-time and historical traffic data
+# Get free key: https://developer.tomtom.com/
+TOMTOM_API_KEY=your_tomtom_api_key_here
+
+# HERE Traffic API - Alternative traffic data source
+# Get key: https://developer.here.com/
+HERE_API_KEY=your_here_api_key_here
+
+# INRIX Traffic API - Professional traffic data
+# Get key: https://developer.inrix.com/
+INRIX_API_KEY=your_inrix_api_key_here
+
+# =============================================================================
+# REAL ESTATE APIs
+# =============================================================================
+
+# Zillow API - Property listings and market data
+# Get key: https://www.zillow.com/developers/
+ZILLOW_API_KEY=your_zillow_api_key_here
+
+# Realtor.com API - Property data and market trends
+# Get key: https://developer.realtor.com/
+REALTOR_API_KEY=your_realtor_api_key_here
+
+# Redfin API - Property listings and market data
+# Get key: https://www.redfin.com/developers
+REDFIN_API_KEY=your_redfin_api_key_here
+
+# =============================================================================
+# DEMOGRAPHIC & ECONOMIC DATA
+# =============================================================================
+
+# US Census Bureau API - Demographic and economic data
+# Get key: https://api.census.gov/data/key_signup.html
+CENSUS_API_KEY=your_census_api_key_here
+
+# Bureau of Labor Statistics API - Employment and economic data
+# Get key: https://www.bls.gov/developers/
+BLS_API_KEY=your_bls_api_key_here
+
+# Federal Reserve Economic Data (FRED) API - Economic indicators
+# Get key: https://fred.stlouisfed.org/docs/api/api_key.html
+FRED_API_KEY=your_fred_api_key_here
+
+# =============================================================================
+# MAPPING & GEOCODING APIs
+# =============================================================================
+
+# Google Maps API - Geocoding and mapping (optional)
+# Get key: https://developers.google.com/maps/documentation/javascript/get-api-key
+GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
+
+# Mapbox API - Alternative mapping and geocoding
+# Get key: https://account.mapbox.com/access-tokens/
+MAPBOX_API_KEY=your_mapbox_api_key_here
+
+# =============================================================================
+# WEATHER APIs (for traffic correlation)
+# =============================================================================
+
+# OpenWeatherMap API - Weather data
+# Get key: https://openweathermap.org/api
+OPENWEATHER_API_KEY=your_openweather_api_key_here
+
+# WeatherAPI - Alternative weather data
+# Get key: https://www.weatherapi.com/
+WEATHER_API_KEY=your_weather_api_key_here
+
+# =============================================================================
+# APPLICATION SETTINGS
+# =============================================================================
+
+# Database Configuration
+DATABASE_URL=sqlite:///./traffic_detector.db
+
+# Debug Mode
+DEBUG=False
+
+# Data Collection Settings
+DEFAULT_ANALYSIS_RADIUS=5000
+TRAFFIC_DATA_RETENTION_DAYS=365
+MAX_CONCURRENT_REQUESTS=10
+
+# Investment Analysis Settings
+MIN_INVESTMENT_SCORE=0.3
+MAX_INVESTMENT_SCORE=1.0
+DEFAULT_ROI_THRESHOLD=0.08
+
+# Historical Data Collection
+HISTORICAL_DATA_DAYS=365
+DATA_COLLECTION_INTERVAL_HOURS=1
+
+# API Rate Limits (requests per minute)
+TOMTOM_RATE_LIMIT=60
+ZILLOW_RATE_LIMIT=30
+CENSUS_RATE_LIMIT=100
+
+# =============================================================================
+# ATLANTA-SPECIFIC SETTINGS
+# =============================================================================
+
+# Primary region for analysis
+DEFAULT_REGION=atlanta
+
+# Atlanta metro area coordinates (center point)
+ATLANTA_CENTER_LAT=33.7490
+ATLANTA_CENTER_LNG=-84.3880
+
+# Analysis radius for Atlanta metro (miles)
+ATLANTA_ANALYSIS_RADIUS=50
+
+# Target property types for Atlanta
+ATLANTA_PROPERTY_TYPES=residential,commercial,mixed-use
+
+# =============================================================================
+# MACHINE LEARNING SETTINGS
+# =============================================================================
+
+# Model paths
+ML_MODEL_PATH=app/ml/models/
+PREDICTION_CONFIDENCE_THRESHOLD=0.7
+
+# =============================================================================
+# DASHBOARD SETTINGS
+# =============================================================================
+
+# Dashboard refresh interval (seconds)
+DASHBOARD_REFRESH_INTERVAL=300
+
+# Maximum data points to display
+MAX_DATA_POINTS=10000
+
+# =============================================================================
+# LOGGING SETTINGS
+# =============================================================================
+
+# Log level
+LOG_LEVEL=INFO
+
+# Log file path
+LOG_FILE=logs/traffic_detector.log
+
+# =============================================================================
+# SECURITY SETTINGS
+# =============================================================================
+
+# Secret key for JWT tokens (if implementing authentication)
+SECRET_KEY=your_secret_key_here
+
+# CORS origins (comma-separated)
+ALLOWED_ORIGINS=http://localhost:3000,http://localhost:8000 
